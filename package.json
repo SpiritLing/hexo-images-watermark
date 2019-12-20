@@ -1,6 +1,6 @@
 {
   "name": "hexo-images-watermark",
-  "version": "1.1.2",
+  "version": "1.1.4",
   "description": "用于Hexo构建静态博客时，对文章图片添加水印",
   "main": "index.js",
   "scripts": {
