@@ -1,5 +1,7 @@
 # hexo-images-watermark
 
+[![Build Status](https://travis-ci.com/SpiritLing/hexo-images-watermark.svg?branch=master)](https://travis-ci.com/SpiritLing/hexo-images-watermark) [![npm version](https://badge.fury.io/js/hexo-images-watermark.svg)](https://badge.fury.io/js/hexo-images-watermark)
+
 一款用于 Hexo 静态博客网站生成时对图片添加水印。
 
 不对原图产生任何影响，在网站静态页构建过程中将原图读取，输出添加了水印的图片。

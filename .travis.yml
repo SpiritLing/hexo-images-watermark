@@ -1,0 +1,19 @@
+language: node_js
+services:
+  - docker
+node_js:
+  - 12
+jobs:
+  include:
+    - stage: master
+      name: "master"
+      if: branch = master
+      script: 
+        - npm run test
+
+notifications:
+  email:
+    recipients:
+      - ling_dark_portal@163.com
+    on_success: never # default: change
+    on_failure: always # default: always
