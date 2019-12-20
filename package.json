@@ -1,6 +1,6 @@
 {
   "name": "hexo-images-watermark",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "用于Hexo构建静态博客时，对文章图片添加水印",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,6 @@
   "dependencies": {
     "bluebird": "^3.7.2",
     "husky": "^3.1.0",
-    "images": "^3.0.2",
     "minimatch": "^3.0.4",
     "sharp": "^0.23.4",
     "svg2png": "^4.1.1",
