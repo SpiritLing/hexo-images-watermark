@@ -1,6 +1,6 @@
 # hexo-images-watermark
 
-[![Build Status](https://travis-ci.com/SpiritLing/hexo-images-watermark.svg?branch=master)](https://travis-ci.com/SpiritLing/hexo-images-watermark) [![npm version](https://badge.fury.io/js/hexo-images-watermark.svg)](https://badge.fury.io/js/hexo-images-watermark)
+[![Build Status](https://travis-ci.com/SpiritLing/hexo-images-watermark.svg?branch=master)](https://travis-ci.com/SpiritLing/hexo-images-watermark) [![npm version](https://img.shields.io/npm/v/hexo-images-watermark?label=npm%20version)](https://www.npmjs.com/package/hexo-images-watermark) [![npm package download](https://img.shields.io/npm/dm/hexo-images-watermark?label=npm%20downloads)](https://www.npmjs.com/package/hexo-images-watermark) [![NPM License](https://img.shields.io/npm/l/hexo-images-watermark)](https://spdx.org/licenses/GPL-3.0-only.html)
 
 一款用于 Hexo 静态博客网站生成时对图片添加水印。
 
@@ -61,6 +61,11 @@ watermark:
 **默认值**：使用配置文件中的url，一旦url不存在直接显示作者名字（SpiritLing）
 **说明**：当你使用的文字过长时，一旦转为图片后大于待加水印的图片尺寸，则会出现错误。
 
+### `fontPath`
+
+**默认值**：undefined，使用 `text-to-svg` 自带字体
+**说明**：自己加载需要的字体，支持单个字体文件，不区分中英文；如果纯中文，请只加载中文字体，例：需要加载 `source/static/font/custom.ttf` 字体直接将其写入到配置文件中即可
+
 ### `color`
 
 **默认值**：rgb(169,169,167)
@@ -119,8 +124,8 @@ watermark:
 
 1. 文字不要过长过大，水印图片不要过大（太大可以使用缩放，⚠️但是缩放是全局性的），否则都会出现错误，终止生成静态页面
 2. 暂不支持图片和文字共同添加
-3. 目前只支持 `*.jpg`,`*.png` 两种格式图片，并且只支持`source/_posts`文件夹下的图片，也就是文章本地图片；同时也不支持远程图片
-4. 水印图片也不支持远程和非soucre根路径下的文件，也是只支持 `*.jpg`,`*.png` 两种格式图片
+3. 目前只支持 `*.jpg`,`*.jpeg`，`*.png` 两种格式图片，并且只支持`source/_posts`文件夹下的图片，也就是文章本地图片；同时也不支持远程图片
+4. 水印图片也不支持远程和非soucre根路径下的文件，也是只支持 `*.jpg`,`*.jpeg`，`*.png` 两种格式图片
 5. 不支持循环满图添加水印
 6. 请使用 `1.1.x` 以上版本， `1.0.x` 是进行Hexo api相关测试时使用的，版本杂乱无章，使用 `1.0.x` 版本出现任何问题，概不理会
 
@@ -128,7 +133,7 @@ watermark:
 
 - [x] 文字水印
     - [x] 自定义文字，颜色，大小
-    - [ ] 自定义字体
+    - [X] 自定义字体 - 2019-12-24 Done
     - [ ] 支持循环添加
     - [ ] 超限处理
 - [x] 图片水印
