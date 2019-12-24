@@ -69,21 +69,21 @@ watermark:
 ### `gravity`
 
 **默认值**：southeast
-**说明**：放置水印位置为什么方向，以上北下南左西右东来确定
+**说明**：设置水印位置处于什么方向，以 `上北下南左东右西` 来确定
 
 参数可用值：
 
-| 类型 | 说明 |
-| --- | --- |
-| centre | 中央 |
-| north | 北 |
-| north | 东 |
-| north | 南 |
-| north | 西 |
-| north | 东北 |
-| north | 东南 |
-| north | 西南 |
-| north | 西北 |
+| 类型 | 说明 | 备注 |
+| --- | --- | --- |
+| centre | 中央 | 图片正中间 |
+| north | 北 | 上方中间 |
+| west | 东 | 左边中间 |
+| south | 南 | 下边中间 |
+| east | 西 | 右边中间 |
+| northwest | 东北 | 左上角 |
+| southwest | 东南 | 左下角 |
+| southeast | 西南 | 右下角 | 
+| northeast | 西北 | 右上角 |
 
 ### `fontSize`
 
