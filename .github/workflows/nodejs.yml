@@ -25,6 +25,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install -g eslint
+    - run: pwd
     - run: npm test
       env:
         CI: true
