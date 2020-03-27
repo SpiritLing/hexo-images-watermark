@@ -10,6 +10,9 @@
     "type": "https",
     "url": "https://github.com/SpiritLing/hexo-images-watermark.git"
   },
+  "bugs": {
+    "url": "https://github.com/SpiritLing/hexo-images-watermark/issues"
+  },
   "keywords": [
     "hexo",
     "images",

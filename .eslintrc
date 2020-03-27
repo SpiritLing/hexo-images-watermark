@@ -18,7 +18,7 @@
         "space-before-function-paren":"error",
         "space-infix-ops":"error",
         "no-empty-function":"error",
-        "no-console":"warn",
+        "no-console":"error",
         "no-unused-vars":"error"
     }
 }
